@@ -1,0 +1,155 @@
+$black-color: #151522;
+$grey-color: #888583;
+
+* {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #151522;
+  font-size: 17px;
+  line-height: 22px;
+}
+.gilroy {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+}
+h1,
+.h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+h2,
+.h2 {
+  font-size: 20px;
+  line-height: 26px;
+}
+h3,
+.h3 {
+  font-size: 17px;
+  line-height: 22px;
+}
+.p15 {
+  font-size: 15px;
+  line-height: 19px;
+}
+.p13 {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.blue-color {
+  color: #6bb4ff;
+}
+.grey-color {
+  color: #888583;
+}
+.green-color {
+  color: $green-color;
+}
+.red-color {
+  color: $red-color;
+}
+
+.bg-white {
+  background: #fff;
+}
+.bg-default {
+  background: #f9fafc;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+
+.blue-btn-outline,
+.green-btn-outline {
+  width: 100%;
+  max-width: 116px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  color: #6bb4ff;
+
+  background: #ffffff;
+  border: 1px solid #6bb4ff;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: 0.22s;
+
+  &:hover {
+    background: #6bb4ff;
+    color: #fff;
+
+    svg {
+      rect {
+        fill: #fff;
+      }
+    }
+  }
+}
+.green-btn-outline {
+  color: $green-color;
+  border-color: $green-color;
+  &:hover {
+    background: $green-color;
+    color: #fff;
+  }
+}
+.blue-btn {
+  width: 100%;
+  max-width: 116px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  color: #fff;
+
+  background: #6bb4ff;
+  border: 1px solid #6bb4ff;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: 0.22s;
+
+  &:hover {
+    background: #fff;
+    color: #6bb4ff;
+
+    svg {
+      rect {
+        fill: #6bb4ff;
+      }
+    }
+  }
+}

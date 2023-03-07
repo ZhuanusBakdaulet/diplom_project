@@ -1,0 +1,40 @@
+{
+  "name": "smart_satu",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "@nuxtjs/auth-next": "^5.0.0-1622018627.48534b6",
+    "@nuxtjs/axios": "^5.13.5",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "chart.js": "^3.5.1",
+    "core-js": "^3.9.1",
+    "cyrillic-to-translit-js": "^3.1.0",
+    "google-maps-api-loader": "^1.1.1",
+    "highcharts": "^9.2.2",
+    "highcharts-vue": "^1.4.0",
+    "nuxt": "^2.15.3",
+    "nuxt-seo": "^1.5.0",
+    "swiper": "^6.6.2",
+    "v-mask": "^2.2.4",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-infinite-loading": "^2.4.5",
+    "vue-scrollto": "^2.20.0",
+    "vue-yandex-maps": "^0.10.11",
+    "webp-loader": "^0.6.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3",
+    "fibers": "^5.0.0",
+    "sass": "~1.32.6",
+    "sass-loader": "^10.2.0"
+  }
+}

@@ -1,0 +1,27 @@
+name: Baital deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server
+        uses: "appleboy/ssh-action@master"
+        with:
+          host: "185.100.67.130"
+          username: "root"
+          password: ${{secrets.PRODUCTION_SERVER_PASSWORD}}
+          port: "22"
+          script: |
+            cd /var/www/front
+            ${{secrets.GIT_PULL}}
+            npm install
+            npm audit fix
+            npm run build
+            pm2 delete all
+            pm2 start npm --name "baital.kz" -- run start
+            systemctl restart nginx
